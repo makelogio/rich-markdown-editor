@@ -12,8 +12,6 @@ export declare const Code: any;
 export declare const Notices: any;
 export declare const ReadOnly: any;
 export declare const MaxLength: any;
-export declare const Checkboxes: any;
-export declare const ReadOnlyWriteCheckboxes: any;
 export declare const Persisted: any;
 export declare const Placeholder: any;
 export declare const Images: any;

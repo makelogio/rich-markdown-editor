@@ -34,13 +34,6 @@ function blockMenuItems(dictionary) {
             name: "separator",
         },
         {
-            name: "checkbox_list",
-            title: dictionary.checkboxList,
-            icon: outline_icons_1.TodoListIcon,
-            keywords: "checklist checkbox task",
-            shortcut: "^ ⇧ 7",
-        },
-        {
             name: "bullet_list",
             title: dictionary.bulletList,
             icon: outline_icons_1.BulletedListIcon,
@@ -54,12 +47,6 @@ function blockMenuItems(dictionary) {
         },
         {
             name: "separator",
-        },
-        {
-            name: "table",
-            title: dictionary.table,
-            icon: outline_icons_1.TableIcon,
-            attrs: { rowsCount: 3, colsCount: 3 },
         },
         {
             name: "blockquote",

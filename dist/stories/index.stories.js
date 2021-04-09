@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Dark = exports.Focused = exports.Images = exports.Placeholder = exports.Persisted = exports.ReadOnlyWriteCheckboxes = exports.Checkboxes = exports.MaxLength = exports.ReadOnly = exports.Notices = exports.Code = exports.Marks = exports.Tables = exports.Blockquotes = exports.Lists = exports.Headings = exports.TemplateDoc = exports.Default = void 0;
+exports.Dark = exports.Focused = exports.Images = exports.Placeholder = exports.Persisted = exports.MaxLength = exports.ReadOnly = exports.Notices = exports.Code = exports.Marks = exports.Tables = exports.Blockquotes = exports.Lists = exports.Headings = exports.TemplateDoc = exports.Default = void 0;
 const index_1 = __importDefault(require("./index"));
 const lodash_1 = require("lodash");
 const react_1 = __importDefault(require("react"));
@@ -138,22 +138,6 @@ exports.MaxLength = Template.bind({});
 exports.MaxLength.args = {
     maxLength: 100,
     defaultValue: `This document has a max length of 100 characters. Once reached typing is prevented`,
-};
-exports.Checkboxes = Template.bind({});
-exports.Checkboxes.args = {
-    defaultValue: `
-- [x] done
-- [ ] todo`,
-};
-exports.ReadOnlyWriteCheckboxes = Template.bind({});
-exports.ReadOnlyWriteCheckboxes.args = {
-    readOnly: true,
-    readOnlyWriteCheckboxes: true,
-    defaultValue: `A read-only editor with the exception that checkboxes remain toggleable, like GitHub
-
-\\
-- [x] done
-- [ ] todo`,
 };
 exports.Persisted = Template.bind({});
 exports.Persisted.args = {
