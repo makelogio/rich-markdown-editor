@@ -34,8 +34,8 @@ import Blockquote from "./nodes/Blockquote";
 import BulletList from "./nodes/BulletList";
 import CodeBlock from "./nodes/CodeBlock";
 import CodeFence from "./nodes/CodeFence";
-import CheckboxList from "./nodes/CheckboxList";
-import CheckboxItem from "./nodes/CheckboxItem";
+// kyle removed new import CheckboxList from "./nodes/CheckboxList";
+// kyle removed import CheckboxItem from "./nodes/CheckboxItem";
 import Embed from "./nodes/Embed";
 import HardBreak from "./nodes/HardBreak";
 import Heading from "./nodes/Heading";
@@ -271,8 +271,8 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
           dictionary,
           onShowToast: this.props.onShowToast,
         }),
-        new CheckboxList(),
-        new CheckboxItem(),
+        // kyle removed new new CheckboxList(),
+        // kyle removed new CheckboxItem(),
         new BulletList(),
         new Embed(),
         new ListItem(),

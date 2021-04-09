@@ -7,8 +7,8 @@ import {
   Heading3Icon,
   HorizontalRuleIcon,
   OrderedListIcon,
-  TableIcon,
-  TodoListIcon,
+  // kyle removed TableIcon,
+  // kyle removed TodoListIcon,
   ImageIcon,
   StarredIcon,
   WarningIcon,
@@ -53,6 +53,7 @@ export default function blockMenuItems(
     {
       name: "separator",
     },
+    /* kyle removed
     {
       name: "checkbox_list",
       title: dictionary.checkboxList,
@@ -60,6 +61,7 @@ export default function blockMenuItems(
       keywords: "checklist checkbox task",
       shortcut: "^ ⇧ 7",
     },
+    */
     {
       name: "bullet_list",
       title: dictionary.bulletList,
@@ -75,12 +77,14 @@ export default function blockMenuItems(
     {
       name: "separator",
     },
+    /* kyle removed
     {
       name: "table",
       title: dictionary.table,
       icon: TableIcon,
       attrs: { rowsCount: 3, colsCount: 3 },
     },
+    */
     {
       name: "blockquote",
       title: dictionary.quote,

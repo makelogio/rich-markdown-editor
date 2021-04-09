@@ -148,14 +148,16 @@ MaxLength.args = {
   maxLength: 100,
   defaultValue: `This document has a max length of 100 characters. Once reached typing is prevented`,
 };
-
+/*
 export const Checkboxes = Template.bind({});
 Checkboxes.args = {
   defaultValue: `
 - [x] done
 - [ ] todo`,
 };
+*/
 
+/*
 export const ReadOnlyWriteCheckboxes = Template.bind({});
 ReadOnlyWriteCheckboxes.args = {
   readOnly: true,
@@ -166,6 +168,7 @@ ReadOnlyWriteCheckboxes.args = {
 - [x] done
 - [ ] todo`,
 };
+*/
 
 export const Persisted = Template.bind({});
 Persisted.args = {

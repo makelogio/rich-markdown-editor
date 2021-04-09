@@ -9,8 +9,10 @@ import Blockquote from "./nodes/Blockquote";
 import BulletList from "./nodes/BulletList";
 import CodeBlock from "./nodes/CodeBlock";
 import CodeFence from "./nodes/CodeFence";
+/* kyle removed 
 import CheckboxList from "./nodes/CheckboxList";
 import CheckboxItem from "./nodes/CheckboxItem";
+*/
 import Embed from "./nodes/Embed";
 import HardBreak from "./nodes/HardBreak";
 import Heading from "./nodes/Heading";
@@ -44,8 +46,10 @@ const extensions = new ExtensionManager([
   new BulletList(),
   new CodeBlock(),
   new CodeFence(),
+  /* kyle removed 
   new CheckboxList(),
   new CheckboxItem(),
+  */
   new Embed(),
   new ListItem(),
   new Notice(),
