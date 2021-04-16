@@ -111,7 +111,10 @@ export declare type Props = {
         done: any;
     }) => void;
     onCancel?: () => void;
-    onChange: (value: () => string) => void;
+    onChange: (value: () => {
+        json: string;
+        markdown: string;
+    }) => void;
     onImageUploadStart?: () => void;
     onImageUploadStop?: () => void;
     onCreateLink?: (title: string) => Promise<string>;
@@ -186,10 +189,13 @@ declare class RichMarkdownEditor extends React.PureComponent<Props, State> {
     createSerializer(): import("./lib/markdown/serializer").MarkdownSerializer;
     createParser(): MarkdownParser<any>;
     createState(value?: string): EditorState<any>;
-    createDocument(content: string): import("prosemirror-model").Node<any>;
+    createDocument(content: string): any;
     createView(): EditorView<any>;
     scrollToAnchor(hash: string): void;
-    value: () => string;
+    value: () => {
+        json: string;
+        markdown: string;
+    };
     handleChange: () => void;
     handleSave: () => void;
     handleSaveAndExit: () => void;

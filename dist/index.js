@@ -99,7 +99,10 @@ class RichMarkdownEditor extends React.PureComponent {
             blockMenuSearch: "",
         };
         this.value = () => {
-            return this.serializer.serialize(this.view.state.doc);
+            return {
+                json: JSON.stringify(this.view.state.doc.toJSON()),
+                markdown: this.serializer.serialize(this.view.state.doc),
+            };
         };
         this.handleChange = () => {
             if (!this.props.onChange)
@@ -424,7 +427,12 @@ class RichMarkdownEditor extends React.PureComponent {
         });
     }
     createDocument(content) {
-        return this.parser.parse(content);
+        try {
+            return JSON.parse(content);
+        }
+        catch (ex) {
+            return this.parser.parse(content);
+        }
     }
     createView() {
         if (!this.element) {
