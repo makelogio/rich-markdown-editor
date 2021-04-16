@@ -100,7 +100,7 @@ export type Props = {
   onFocus?: () => void;
   onSave?: ({ done: boolean }) => void;
   onCancel?: () => void;
-  onChange: (value: () => string) => void;
+  onChange: (value: () => { json: string; markdown: string }) => void;
   onImageUploadStart?: () => void;
   onImageUploadStop?: () => void;
   onCreateLink?: (title: string) => Promise<string>;
@@ -433,7 +433,12 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
   }
 
   createDocument(content: string) {
-    return this.parser.parse(content);
+    // kyle changed use JSON instead of MD
+    try {
+      return JSON.parse(content);
+    } catch (ex) {
+      return this.parser.parse(content);
+    }
   }
 
   createView() {
@@ -499,8 +504,12 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
     }
   }
 
-  value = (): string => {
-    return this.serializer.serialize(this.view.state.doc);
+  value = (): { json: string; markdown: string } => {
+    // kyle changed use JSON instead of MD
+    return {
+      json: JSON.stringify(this.view.state.doc.toJSON()),
+      markdown: this.serializer.serialize(this.view.state.doc),
+    };
   };
 
   handleChange = () => {
