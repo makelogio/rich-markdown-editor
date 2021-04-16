@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Dark = exports.Focused = exports.Images = exports.Placeholder = exports.Persisted = exports.MaxLength = exports.ReadOnly = exports.Notices = exports.Code = exports.Marks = exports.Tables = exports.Blockquotes = exports.Lists = exports.Headings = exports.TemplateDoc = exports.Default = void 0;
+exports.withJSON = exports.Dark = exports.Focused = exports.Images = exports.Placeholder = exports.Persisted = exports.MaxLength = exports.ReadOnly = exports.Notices = exports.Code = exports.Marks = exports.Tables = exports.Blockquotes = exports.Lists = exports.Headings = exports.TemplateDoc = exports.Default = void 0;
 const index_1 = __importDefault(require("./index"));
 const lodash_1 = require("lodash");
 const react_1 = __importDefault(require("react"));
@@ -173,5 +173,36 @@ exports.Dark.args = {
     defaultValue: `# Dark
 
 There's a customizable dark theme too`,
+};
+exports.withJSON = Template.bind({});
+exports.withJSON.args = {
+    defaultValue: `
+    {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "This is a test with the new body using JSON not MD!"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Test"
+            }
+          ]
+        }
+      ]
+    }
+  `,
 };
 //# sourceMappingURL=index.stories.js.map

@@ -428,7 +428,7 @@ class RichMarkdownEditor extends React.PureComponent {
     }
     createDocument(content) {
         try {
-            return JSON.parse(content);
+            return this.schema.nodeFromJSON(JSON.parse(content));
         }
         catch (ex) {
             return this.parser.parse(content);

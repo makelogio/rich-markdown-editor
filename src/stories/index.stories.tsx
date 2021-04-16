@@ -210,3 +210,35 @@ Dark.args = {
 
 There's a customizable dark theme too`,
 };
+
+export const withJSON = Template.bind({});
+withJSON.args = {
+  defaultValue: `
+    {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "This is a test with the new body using JSON not MD!"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Test"
+            }
+          ]
+        }
+      ]
+    }
+  `,
+};
