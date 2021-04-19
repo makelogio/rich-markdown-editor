@@ -94,6 +94,7 @@ __underline__
 \`inline code\`
 !!placeholder!!
 [a link](http://www.getoutline.com)
+##label##
 `,
 };
 exports.Code = Template.bind({});
@@ -195,9 +196,11 @@ exports.withJSON.args = {
         {
           "type": "paragraph",
           "content": [
+            {"type":"text","text":"This is a "},
             {
-              "type": "text",
-              "text": "Test"
+              "type":"text",
+              "marks":[{"type":"label"}],
+              "text":"label"
             }
           ]
         }

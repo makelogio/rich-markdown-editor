@@ -7,7 +7,6 @@ const markdown_it_1 = __importDefault(require("markdown-it"));
 const mark_1 = __importDefault(require("./mark"));
 const embeds_1 = __importDefault(require("./embeds"));
 const breaks_1 = __importDefault(require("./breaks"));
-const label_1 = __importDefault(require("./label"));
 const tables_1 = __importDefault(require("./tables"));
 const notices_1 = __importDefault(require("./notices"));
 const underlines_1 = __importDefault(require("./underlines"));
@@ -19,10 +18,10 @@ function rules({ embeds }) {
     })
         .use(embeds_1.default(embeds))
         .use(breaks_1.default)
+        .use(mark_1.default({ delim: "##", mark: "label" }))
         .use(mark_1.default({ delim: "==", mark: "highlight" }))
         .use(mark_1.default({ delim: "!!", mark: "placeholder" }))
         .use(underlines_1.default)
-        .use(label_1.default)
         .use(tables_1.default)
         .use(notices_1.default));
 }

@@ -25,7 +25,7 @@ class Label extends Mark_1.default {
         };
     }
     inputRules({ type }) {
-        return [markInputRule_1.default(/(?:\#)([^*]+)(?:\#)$/, type)];
+        return [markInputRule_1.default(/(?:\#\#)([^*]+)(?:\#\#)$/, type)];
     }
     keys({ type }) {
         return {
