@@ -38,6 +38,8 @@ export declare const base: {
     noticeTipText: string;
     noticeWarningBackground: string;
     noticeWarningText: string;
+    labelColor: string;
+    labelBg: string;
     almostBlack: string;
     lightBlack: string;
     almostWhite: string;
@@ -110,6 +112,8 @@ export declare const light: {
     noticeTipText: string;
     noticeWarningBackground: string;
     noticeWarningText: string;
+    labelColor: string;
+    labelBg: string;
     almostBlack: string;
     lightBlack: string;
     almostWhite: string;
@@ -182,6 +186,8 @@ export declare const dark: {
     noticeTipText: string;
     noticeWarningBackground: string;
     noticeWarningText: string;
+    labelColor: string;
+    labelBg: string;
     almostBlack: string;
     lightBlack: string;
     almostWhite: string;

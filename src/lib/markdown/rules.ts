@@ -3,6 +3,7 @@ import markPlugin from "./mark";
 // kyle removed import checkboxPlugin from "./checkboxes";
 import embedsPlugin from "./embeds";
 import breakPlugin from "./breaks";
+import labelPlugin from "./label";
 import tablesPlugin from "./tables";
 import noticesPlugin from "./notices";
 import underlinesPlugin from "./underlines";
@@ -20,6 +21,7 @@ export default function rules({ embeds }) {
       .use(markPlugin({ delim: "==", mark: "highlight" }))
       .use(markPlugin({ delim: "!!", mark: "placeholder" }))
       .use(underlinesPlugin)
+      .use(labelPlugin)
       .use(tablesPlugin)
       .use(noticesPlugin)
   );

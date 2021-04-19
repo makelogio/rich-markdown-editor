@@ -9,6 +9,7 @@ import {
   StrikethroughIcon,
   InputIcon,
   HighlightIcon,
+  HashtagIcon,
 } from "outline-icons";
 import { isInTable } from "prosemirror-tables";
 import { EditorState } from "prosemirror-state";
@@ -70,6 +71,12 @@ export default function formattingMenuItems(
       tooltip: dictionary.codeInline,
       icon: CodeIcon,
       active: isMarkActive(schema.marks.code_inline),
+    },
+    {
+      name: "label",
+      tooltip: dictionary.label,
+      icon: HashtagIcon,
+      active: isMarkActive(schema.marks.label),
     },
     {
       name: "separator",

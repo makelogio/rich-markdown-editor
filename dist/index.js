@@ -68,6 +68,7 @@ const Bold_1 = __importDefault(require("./marks/Bold"));
 const Code_1 = __importDefault(require("./marks/Code"));
 const Highlight_1 = __importDefault(require("./marks/Highlight"));
 const Italic_1 = __importDefault(require("./marks/Italic"));
+const Label_1 = __importDefault(require("./marks/Label"));
 const Link_1 = __importDefault(require("./marks/Link"));
 const Strikethrough_1 = __importDefault(require("./marks/Strikethrough"));
 const Placeholder_1 = __importDefault(require("./marks/Placeholder"));
@@ -320,6 +321,7 @@ class RichMarkdownEditor extends React.PureComponent {
             new Italic_1.default(),
             new Placeholder_1.default(),
             new Underline_1.default(),
+            new Label_1.default(),
             new Link_1.default({
                 onKeyboardShortcut: this.handleOpenLinkMenu,
                 onClickLink: this.props.onClickLink,
@@ -997,6 +999,14 @@ const StyledEditor = styled_components_1.default("div") `
       padding: 0;
       border: 0;
     }
+  }
+
+  span.label {
+    color: ${props => props.theme.labelColor};
+    background-color: ${props => props.theme.labelBg};
+    border-radius: 0.25em;
+    padding: 0.25em;
+    font-size: 0.85em;
   }
 
   .token.comment,

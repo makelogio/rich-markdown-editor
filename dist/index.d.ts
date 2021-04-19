@@ -72,6 +72,8 @@ export declare const theme: {
     noticeTipText: string;
     noticeWarningBackground: string;
     noticeWarningText: string;
+    labelColor: string;
+    labelBg: string;
     almostBlack: string;
     lightBlack: string;
     almostWhite: string;
@@ -276,6 +278,8 @@ declare class RichMarkdownEditor extends React.PureComponent<Props, State> {
         noticeTipText: string;
         noticeWarningBackground: string;
         noticeWarningText: string;
+        labelColor: string;
+        labelBg: string;
         almostBlack: string;
         lightBlack: string;
         almostWhite: string;
@@ -302,6 +306,7 @@ declare class RichMarkdownEditor extends React.PureComponent<Props, State> {
         codeBlock: string;
         codeCopied: string;
         codeInline: string;
+        label: string;
         createLink: string;
         createLinkError: string;
         createNewDoc: string;
@@ -359,6 +364,7 @@ declare class RichMarkdownEditor extends React.PureComponent<Props, State> {
         codeBlock: string;
         codeCopied: string;
         codeInline: string;
+        label: string;
         createLink: string;
         createLinkError: string;
         createNewDoc: string;
@@ -416,6 +422,7 @@ declare class RichMarkdownEditor extends React.PureComponent<Props, State> {
         codeBlock: string;
         codeCopied: string;
         codeInline: string;
+        label: string;
         createLink: string;
         createLinkError: string;
         createNewDoc: string;

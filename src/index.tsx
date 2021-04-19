@@ -55,6 +55,7 @@ import Bold from "./marks/Bold";
 import Code from "./marks/Code";
 import Highlight from "./marks/Highlight";
 import Italic from "./marks/Italic";
+import Label from "./marks/Label";
 import Link from "./marks/Link";
 import Strikethrough from "./marks/Strikethrough";
 import TemplatePlaceholder from "./marks/Placeholder";
@@ -307,6 +308,7 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
         new Italic(),
         new TemplatePlaceholder(),
         new Underline(),
+        new Label(),
         new Link({
           onKeyboardShortcut: this.handleOpenLinkMenu,
           onClickLink: this.props.onClickLink,
@@ -1221,6 +1223,14 @@ const StyledEditor = styled("div")<{
       padding: 0;
       border: 0;
     }
+  }
+
+  span.label {
+    color: ${props => props.theme.labelColor};
+    background-color: ${props => props.theme.labelBg};
+    border-radius: 0.25em;
+    padding: 0.25em;
+    font-size: 0.85em;
   }
 
   .token.comment,

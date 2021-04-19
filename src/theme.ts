@@ -58,6 +58,9 @@ export const base = {
   noticeTipText: colors.white,
   noticeWarningBackground: "#FF5C80",
   noticeWarningText: colors.white,
+
+  labelColor: colors.black,
+  labelBg: "#e8e8fc",
 };
 
 export const light = {

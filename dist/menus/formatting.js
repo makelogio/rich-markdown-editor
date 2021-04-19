@@ -57,6 +57,12 @@ function formattingMenuItems(state, isTemplate, dictionary) {
             active: isMarkActive_1.default(schema.marks.code_inline),
         },
         {
+            name: "label",
+            tooltip: dictionary.label,
+            icon: outline_icons_1.HashtagIcon,
+            active: isMarkActive_1.default(schema.marks.label),
+        },
+        {
             name: "separator",
             visible: allowBlocks,
         },

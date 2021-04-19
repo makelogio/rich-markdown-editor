@@ -11,6 +11,7 @@ export declare const base: {
     codeBlock: string;
     codeCopied: string;
     codeInline: string;
+    label: string;
     createLink: string;
     createLinkError: string;
     createNewDoc: string;
