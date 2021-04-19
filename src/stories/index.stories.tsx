@@ -233,9 +233,11 @@ withJSON.args = {
         {
           "type": "paragraph",
           "content": [
+            {"type":"text","text":"This is a "},
             {
-              "type": "text",
-              "text": "Test"
+              "type":"text",
+              "marks":[{"type":"label"}],
+              "text":"label"
             }
           ]
         }
