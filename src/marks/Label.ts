@@ -24,7 +24,7 @@ export default class Label extends Mark {
   }
 
   inputRules({ type }) {
-    return [markInputRule(/(?:\#)([^*]+)(?:\#)$/, type)];
+    return [markInputRule(/(?:\#\#)([^*]+)(?:\#\#)$/, type)];
   }
 
   keys({ type }) {

@@ -99,6 +99,7 @@ __underline__
 \`inline code\`
 !!placeholder!!
 [a link](http://www.getoutline.com)
+##label##
 `,
 };
 
