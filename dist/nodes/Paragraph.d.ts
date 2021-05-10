@@ -2,6 +2,11 @@ import Node from "./Node";
 export default class Paragraph extends Node {
     get name(): string;
     get schema(): {
+        attrs: {
+            labels: {
+                default: {};
+            };
+        };
         content: string;
         group: string;
         parseDOM: {

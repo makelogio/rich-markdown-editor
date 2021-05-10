@@ -4,6 +4,11 @@ import Node from "./Node";
 export default class ListItem extends Node {
     get name(): string;
     get schema(): {
+        attrs: {
+            labels: {
+                default: {};
+            };
+        };
         content: string;
         defining: boolean;
         draggable: boolean;

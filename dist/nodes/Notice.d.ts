@@ -4,6 +4,9 @@ export default class Notice extends Node {
     get name(): string;
     get schema(): {
         attrs: {
+            labels: {
+                default: {};
+            };
             style: {
                 default: string;
             };

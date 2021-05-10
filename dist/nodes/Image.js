@@ -173,6 +173,9 @@ class Image extends Node_1.default {
                 title: {
                     default: null,
                 },
+                labels: {
+                    default: {},
+                },
             },
             content: "text*",
             marks: "",

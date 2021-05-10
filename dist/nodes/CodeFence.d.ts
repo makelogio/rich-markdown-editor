@@ -4,6 +4,9 @@ export default class CodeFence extends Node {
     get name(): string;
     get schema(): {
         attrs: {
+            labels: {
+                default: {};
+            };
             language: {
                 default: string;
             };

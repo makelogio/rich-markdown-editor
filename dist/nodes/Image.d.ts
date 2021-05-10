@@ -17,6 +17,9 @@ export default class Image extends Node {
             title: {
                 default: null;
             };
+            labels: {
+                default: {};
+            };
         };
         content: string;
         marks: string;

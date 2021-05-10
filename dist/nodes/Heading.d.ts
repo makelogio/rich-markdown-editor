@@ -9,6 +9,9 @@ export default class Heading extends Node {
     };
     get schema(): {
         attrs: {
+            labels: {
+                default: {};
+            };
             level: {
                 default: number;
             };
