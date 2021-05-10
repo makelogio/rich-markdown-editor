@@ -21,6 +21,9 @@ export default class Notice extends Node {
   get schema() {
     return {
       attrs: {
+        labels: {
+          default: {},
+        },
         style: {
           default: "info",
         },

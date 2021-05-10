@@ -9,6 +9,11 @@ export default class Blockquote extends Node {
 
   get schema() {
     return {
+      attrs: {
+        labels: {
+          default: {},
+        },
+      },
       content: "block+",
       group: "block",
       defining: true,

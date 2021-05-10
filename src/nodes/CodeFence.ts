@@ -54,6 +54,9 @@ export default class CodeFence extends Node {
   get schema() {
     return {
       attrs: {
+        labels: {
+          default: {},
+        },
         language: {
           default: "javascript",
         },

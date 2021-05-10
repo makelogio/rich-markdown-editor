@@ -8,6 +8,11 @@ export default class Paragraph extends Node {
 
   get schema() {
     return {
+      attrs: {
+        labels: {
+          default: {},
+        },
+      },
       content: "inline*",
       group: "block",
       parseDOM: [{ tag: "p" }],
